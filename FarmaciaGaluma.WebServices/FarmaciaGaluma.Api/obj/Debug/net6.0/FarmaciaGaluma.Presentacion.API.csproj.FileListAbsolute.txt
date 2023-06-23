@@ -1,0 +1,8 @@
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.csproj.AssemblyReference.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.AssemblyInfoInputs.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.AssemblyInfo.cs
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.csproj.CoreCompileInputs.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.RazorAssemblyInfo.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Api\obj\Debug\net6.0\FarmaciaGaluma.Presentacion.API.RazorAssemblyInfo.cs

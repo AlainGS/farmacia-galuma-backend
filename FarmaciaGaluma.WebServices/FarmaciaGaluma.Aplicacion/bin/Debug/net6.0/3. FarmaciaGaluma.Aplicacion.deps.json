@@ -1,0 +1,33 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "3. FarmaciaGaluma.Aplicacion/1.0.0": {
+        "runtime": {
+          "3. FarmaciaGaluma.Aplicacion.dll": {}
+        }
+      },
+      "4. FarmaciaGaluma.Dominio/1.0.0": {
+        "runtime": {
+          "4. FarmaciaGaluma.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "3. FarmaciaGaluma.Aplicacion/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "4. FarmaciaGaluma.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

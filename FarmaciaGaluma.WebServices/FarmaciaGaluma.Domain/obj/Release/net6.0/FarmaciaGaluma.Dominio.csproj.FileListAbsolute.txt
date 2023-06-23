@@ -1,0 +1,12 @@
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\bin\Release\net6.0\FarmaciaGaluma.Dominio.deps.json
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\bin\Release\net6.0\FarmaciaGaluma.Dominio.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\bin\Release\net6.0\FarmaciaGaluma.Dominio.pdb
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.csproj.AssemblyReference.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.AssemblyInfoInputs.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.AssemblyInfo.cs
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\refint\FarmaciaGaluma.Dominio.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\FarmaciaGaluma.Dominio.pdb
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Domain\obj\Release\net6.0\ref\FarmaciaGaluma.Dominio.dll

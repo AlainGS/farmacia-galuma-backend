@@ -1,0 +1,17 @@
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Infraestructura.deps.json
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Infraestructura.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Infraestructura.pdb
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Dominio.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Utilidades.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Dominio.pdb
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\bin\Release\net6.0\FarmaciaGaluma.Utilidades.pdb
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.csproj.AssemblyReference.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.AssemblyInfoInputs.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.AssemblyInfo.cs
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.csproj.CoreCompileInputs.cache
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.csproj.CopyComplete
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\refint\FarmaciaGaluma.Infraestructura.dll
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\FarmaciaGaluma.Infraestructura.pdb
+C:\Users\Alakings\Desktop\Farmacia Galuma Backend\FarmaciaGaluma.WebServices\FarmaciaGaluma.Infraestructura\obj\Release\net6.0\ref\FarmaciaGaluma.Infraestructura.dll

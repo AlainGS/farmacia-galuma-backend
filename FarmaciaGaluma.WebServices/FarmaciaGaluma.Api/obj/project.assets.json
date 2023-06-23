@@ -1,0 +1,151 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "FarmaciaGaluma.Aplicacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FarmaciaGaluma.Dominio": "1.0.0",
+          "FarmaciaGaluma.Infraestructura": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FarmaciaGaluma.Aplicacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FarmaciaGaluma.Aplicacion.dll": {}
+        }
+      },
+      "FarmaciaGaluma.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FarmaciaGaluma.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FarmaciaGaluma.Dominio.dll": {}
+        }
+      },
+      "FarmaciaGaluma.Infraestructura/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "FarmaciaGaluma.Dominio": "1.0.0",
+          "FarmaciaGaluma.Utilidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/FarmaciaGaluma.Infraestructura.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FarmaciaGaluma.Infraestructura.dll": {}
+        }
+      },
+      "FarmaciaGaluma.Utilidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/FarmaciaGaluma.Utilidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/FarmaciaGaluma.Utilidades.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "FarmaciaGaluma.Aplicacion/1.0.0": {
+      "type": "project",
+      "path": "../FarmaciaGaluma.Aplicacion/FarmaciaGaluma.Aplicacion.csproj",
+      "msbuildProject": "../FarmaciaGaluma.Aplicacion/FarmaciaGaluma.Aplicacion.csproj"
+    },
+    "FarmaciaGaluma.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../FarmaciaGaluma.Domain/FarmaciaGaluma.Dominio.csproj",
+      "msbuildProject": "../FarmaciaGaluma.Domain/FarmaciaGaluma.Dominio.csproj"
+    },
+    "FarmaciaGaluma.Infraestructura/1.0.0": {
+      "type": "project",
+      "path": "../FarmaciaGaluma.Infraestructura/FarmaciaGaluma.Infraestructura.csproj",
+      "msbuildProject": "../FarmaciaGaluma.Infraestructura/FarmaciaGaluma.Infraestructura.csproj"
+    },
+    "FarmaciaGaluma.Utilidades/1.0.0": {
+      "type": "project",
+      "path": "../FarmaciaGaluma.Utilidades/FarmaciaGaluma.Utilidades.csproj",
+      "msbuildProject": "../FarmaciaGaluma.Utilidades/FarmaciaGaluma.Utilidades.csproj"
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "FarmaciaGaluma.Aplicacion >= 1.0.0",
+      "FarmaciaGaluma.Dominio >= 1.0.0",
+      "FarmaciaGaluma.Infraestructura >= 1.0.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\Alakings\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\FarmaciaGaluma.API.csproj",
+      "projectName": "FarmaciaGaluma.API",
+      "projectPath": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\FarmaciaGaluma.API.csproj",
+      "packagesPath": "C:\\Users\\Alakings\\.nuget\\packages\\",
+      "outputPath": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\Alakings\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {
+            "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\FarmaciaGaluma.Aplicacion.csproj": {
+              "projectPath": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\FarmaciaGaluma.Aplicacion.csproj"
+            },
+            "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\FarmaciaGaluma.Dominio.csproj": {
+              "projectPath": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\FarmaciaGaluma.Dominio.csproj"
+            },
+            "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\FarmaciaGaluma.Infraestructura.csproj": {
+              "projectPath": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\FarmaciaGaluma.Infraestructura.csproj"
+            }
+          }
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.416\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

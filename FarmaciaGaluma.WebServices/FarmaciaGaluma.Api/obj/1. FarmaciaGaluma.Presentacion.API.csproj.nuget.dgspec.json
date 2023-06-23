@@ -1,0 +1,355 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\1. FarmaciaGaluma.Presentacion.API.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\1. FarmaciaGaluma.Presentacion.API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\1. FarmaciaGaluma.Presentacion.API.csproj",
+        "projectName": "1. FarmaciaGaluma.Presentacion.API",
+        "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\1. FarmaciaGaluma.Presentacion.API.csproj",
+        "packagesPath": "C:\\Users\\Alakings\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Api\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alakings\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Datos\\FarmaciaGaluma.Datos.csproj": {
+                "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Datos\\FarmaciaGaluma.Datos.csproj"
+              },
+              "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\2. FarmaciaGaluma.Infraestructura.csproj": {
+                "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\2. FarmaciaGaluma.Infraestructura.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[6.0.13, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\3. FarmaciaGaluma.Aplicacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\3. FarmaciaGaluma.Aplicacion.csproj",
+        "projectName": "3. FarmaciaGaluma.Aplicacion",
+        "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\3. FarmaciaGaluma.Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\Alakings\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alakings\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\4. FarmaciaGaluma.Dominio.csproj": {
+                "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\4. FarmaciaGaluma.Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Datos\\FarmaciaGaluma.Datos.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Datos\\FarmaciaGaluma.Datos.csproj",
+        "projectName": "FarmaciaGaluma.Datos",
+        "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Datos\\FarmaciaGaluma.Datos.csproj",
+        "packagesPath": "C:\\Users\\Alakings\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Datos\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alakings\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.5, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\4. FarmaciaGaluma.Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\4. FarmaciaGaluma.Dominio.csproj",
+        "projectName": "4. FarmaciaGaluma.Dominio",
+        "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\4. FarmaciaGaluma.Dominio.csproj",
+        "packagesPath": "C:\\Users\\Alakings\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alakings\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\2. FarmaciaGaluma.Infraestructura.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\2. FarmaciaGaluma.Infraestructura.csproj",
+        "projectName": "2. FarmaciaGaluma.Infraestructura",
+        "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\2. FarmaciaGaluma.Infraestructura.csproj",
+        "packagesPath": "C:\\Users\\Alakings\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Infraestructura\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Alakings\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\3. FarmaciaGaluma.Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Aplicacion\\3. FarmaciaGaluma.Aplicacion.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[5.1.1, )"
+            },
+            "Microsoft.Extensions.Options": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.1, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
