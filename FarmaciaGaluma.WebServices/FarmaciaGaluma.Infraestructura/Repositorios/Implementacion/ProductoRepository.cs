@@ -1,6 +1,7 @@
 ﻿using FarmaciaGaluma.Dominio.Entidades;
 using FarmaciaGaluma.Dominio.Entidades.Comunes;
 using FarmaciaGaluma.Utilidades.Utils;
+//using Microsoft.Data.SqlClient;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -124,6 +125,56 @@ namespace FarmaciaGaluma.Infraestructura.Repositorios.Implementacion
                 }
 
                 return paqueteDatos;
+            });
+        }
+
+
+        public Task<RARdata<BEProductoBuscado>> ConsultarProductoXdescripcion(string descripcion) //nombre del medicamento
+        {
+            return Task.Run(() =>
+            {
+                RARdata<BEProductoBuscado> resultData = new RARdata<BEProductoBuscado>();
+
+                ArrayList alParameters = new ArrayList();
+                SqlParameter parameter;
+
+                parameter = new SqlParameter("@Descripcion", SqlDbType.VarChar, 250);
+                parameter.Value = descripcion;
+                alParameters.Add(parameter);
+                try
+                {
+                    DataTable dt = new DataTable();
+                    dt = SqlComandos.getDataTableSP(_conectaDB, "usp_app_consulta_por_descripcion_producto", alParameters);
+
+
+                    BEProductoBuscado productoBuscado = new BEProductoBuscado();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        productoBuscado.ProductoID = int.Parse(row["IdProducto"].ToString()!);
+                        productoBuscado.ProductoDescripcion = row["DescripcionProducto"].ToString()!;
+                        productoBuscado.ProductoPrecio = row["PrecioProducto"].ToString()!;
+                    }
+
+                    if (productoBuscado == null)
+                    {
+                        resultData.cuerpoData = null;
+                        resultData.estadoData = 1;
+                        resultData.mensajeData = "Valor Ingresado es incorrecto";
+                    }
+                    else
+                    {
+                        resultData.cuerpoData = productoBuscado;
+                        resultData.estadoData = 1;
+                    }
+
+                }
+                catch (Exception ex)
+                {
+                    resultData.estadoData = -1;
+                    resultData.mensajeData = MensajesDeError.ERROR_INESPERADO_GET + ex.Message;
+                }
+
+                return resultData;
             });
         }
 

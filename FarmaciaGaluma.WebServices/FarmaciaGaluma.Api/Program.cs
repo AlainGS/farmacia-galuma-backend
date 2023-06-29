@@ -4,6 +4,8 @@ using FarmaciaGaluma.Infraestructura.Repositorios;
 using FarmaciaGaluma.Infraestructura.Repositorios.Implementacion;
 using FarmaciaGaluma.Utilidades.Utils;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.DependencyInjection;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,7 +21,6 @@ builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 // CasosDeUso y Repositorios de ROL
 builder.Services.AddScoped<IRolUseCase, RolUseCase>();
 builder.Services.AddScoped<IRolRepository, RolRepository>();
-
 
 // CasosDeUso y Repositorios de CATEGORIA
 builder.Services.AddScoped<ICategoriaUseCase,CategoriaUseCase>();
@@ -77,12 +78,17 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+if (app.Environment.IsDevelopment() || app.Environment.IsProduction())
 {
-    app.UseSwagger();
-    app.UseSwaggerUI(c =>
+    app.UseSwagger(options =>
     {
-        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Farmacia Galuma API v1");
+        options.SerializeAsV2 = true;
+    });
+
+    app.UseSwaggerUI(options =>
+    {
+        options.SwaggerEndpoint("/swagger/v1/swagger.json", "Farmacia Galuma API v1");
+
     });
 }
 

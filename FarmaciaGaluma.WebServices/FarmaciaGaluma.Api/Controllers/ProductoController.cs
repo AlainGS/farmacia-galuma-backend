@@ -18,7 +18,7 @@ namespace FarmaciaGaluma.API.Controllers
         }
 
         #region LISTAR MUCHOS REGISTROS
-        [HttpPost]
+        [HttpGet]
         [Route("[action]")]
         public async Task<ActionResult> Listado()
         {
@@ -57,6 +57,32 @@ namespace FarmaciaGaluma.API.Controllers
             }
             else
                 return BadRequest(new WebApiError(500, HttpStatusCode.BadRequest.ToString(), paqueteDatos.mensajeData));
+        }
+        #endregion
+
+        #region ConsultarProductoIBMWatson
+        [HttpGet]
+        [Route("{descripcion}")]
+        public async Task<ActionResult> ConsultarProducto(string descripcion)
+        {
+            var paqueteDatos = await _productoUseCase.EjecutarConsultarProductoXdescripcion(descripcion);
+
+            if (paqueteDatos != null)
+            {
+                paqueteDatos.estadoData = paqueteDatos.estadoData == 1 ? 200 : 400;
+                return Ok(paqueteDatos);
+            }
+            else
+                return BadRequest(new WebApiError(500, HttpStatusCode.BadRequest.ToString(), paqueteDatos.mensajeData));
+            //try
+            //{
+            //    var paqueteDatos = await _productoUseCase.EjecutarConsultarProductoXdescripcion(descripcion);
+            //    return Ok(paqueteDatos);
+            //}
+            //catch (Exception ex)
+            //{
+            //    return BadRequest(new WebApiError(400, HttpStatusCode.BadRequest.ToString(), ex.Message));
+            //}
         }
         #endregion
 

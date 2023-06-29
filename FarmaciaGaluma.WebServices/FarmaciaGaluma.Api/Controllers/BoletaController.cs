@@ -20,7 +20,7 @@ namespace FarmaciaGaluma.API.Controllers
                 
         
         #region LISTAR MUCHOS REGISTROS
-        [HttpPost]
+        [HttpGet]
         [Route("[action]")]
         public async Task<ActionResult> UltimoNumero()
         {

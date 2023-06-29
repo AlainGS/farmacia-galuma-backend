@@ -1,6 +1,7 @@
 ﻿using FarmaciaGaluma.Dominio.Entidades;
 using FarmaciaGaluma.Utilidades.Utils;
 using System.Collections;
+using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Reflection;
@@ -35,7 +36,6 @@ namespace FarmaciaGaluma.Infraestructura.Repositorios.Implementacion
                     foreach (DataRow row in dt.Rows)
                     {
                         BEVenta venta = new BEVenta();
-                        venta.nro = int.Parse(row["nro"].ToString()!);
                         venta.VentaID = int.Parse(row["IdVenta"].ToString()!);
                         venta.NumeroBoleta = row["NumeroBoleta"].ToString()!;
                         venta.TipoPago = row["TipoPago"].ToString()!;
@@ -135,11 +135,11 @@ namespace FarmaciaGaluma.Infraestructura.Repositorios.Implementacion
 
 
                 parameter = new SqlParameter("@User", SqlDbType.VarChar, 100);
-                parameter.Value = venta.user;
+                parameter.Value = Environment.UserName;
                 alParameters.Add(parameter);
 
                 parameter = new SqlParameter("@Pc", SqlDbType.VarChar, 100);
-                parameter.Value = venta.pc;
+                parameter.Value = Environment.MachineName;
                 alParameters.Add(parameter);
 
                 parameter = new SqlParameter("@Accion", SqlDbType.Int);
@@ -149,6 +149,78 @@ namespace FarmaciaGaluma.Infraestructura.Repositorios.Implementacion
                 try
                 {
                     paqueteDatos.estadoData = SqlComandos.executeReaderSP(_conectaDB, "usp_app_registra_venta", alParameters, out mensajeDesdeSQLServer) ? 1 : 0;
+                    paqueteDatos.mensajeData = mensajeDesdeSQLServer;
+                }
+                catch (Exception ex)
+                {
+                    paqueteDatos.estadoData = -1;
+                    paqueteDatos.mensajeData = MensajesDeError.ERROR_INESPERADO_SAVE_UPDATE + ex.Message;
+                }
+
+                return paqueteDatos;
+            });
+        }
+
+
+        public Task<RARdata<BEVentaUnProducto>> VentaPorChatBot(BEVentaUnProducto venta)
+        {
+            return Task.Run(() =>
+            {
+                RARdata<BEVentaUnProducto> paqueteDatos = new RARdata<BEVentaUnProducto>();
+                string mensajeDesdeSQLServer = "";      
+                
+
+                ArrayList alParameters = new ArrayList();
+                SqlParameter parameter;
+
+                parameter = new SqlParameter("@IdVenta", SqlDbType.Int);
+                parameter.Value = 0;
+                alParameters.Add(parameter);
+
+                /** BOLETA **/
+                BoletaRepository boletaRepository = new BoletaRepository();
+               
+                parameter = new SqlParameter("@NumeroBoleta", SqlDbType.VarChar, 100);
+                parameter.Value = boletaRepository.UltimoNumeroDoc().Result.cuerpoData.UltimoNumeroDoc;
+                alParameters.Add(parameter);
+
+                parameter = new SqlParameter("@TipoPago", SqlDbType.VarChar, 100);
+                parameter.Value = venta.TipoPago;
+                alParameters.Add(parameter);       
+                
+                /* Producto */
+                ProductoRepository productoRepository = new ProductoRepository();
+                decimal ProductoPrecio = decimal.Parse(productoRepository.ConsultarProductoXdescripcion(venta.ProductoDescripcion).Result.cuerpoData.ProductoPrecio);
+
+                parameter = new SqlParameter("@IdProducto", SqlDbType.Int);
+                parameter.Value = productoRepository.ConsultarProductoXdescripcion(venta.ProductoDescripcion).Result.cuerpoData.ProductoID;
+                alParameters.Add(parameter);
+
+                parameter = new SqlParameter("@Precio", SqlDbType.Decimal);
+                parameter.Value =ProductoPrecio;
+                alParameters.Add(parameter);
+
+
+                parameter = new SqlParameter("@Cantidad", SqlDbType.Int);
+                parameter.Value = venta.ProductoCantidad;
+                alParameters.Add(parameter);
+
+                parameter = new SqlParameter("@VentaTotal", SqlDbType.VarChar, 100);
+                parameter.Value = (venta.ProductoCantidad) * (ProductoPrecio);
+                alParameters.Add(parameter);
+
+                parameter = new SqlParameter("@User", SqlDbType.VarChar, 100);
+                parameter.Value = Environment.UserName;
+                alParameters.Add(parameter);
+
+                parameter = new SqlParameter("@Pc", SqlDbType.VarChar, 100);
+                parameter.Value = Environment.MachineName;
+                alParameters.Add(parameter);
+                               
+
+                try
+                {
+                    paqueteDatos.estadoData = SqlComandos.executeReaderSP(_conectaDB, "usp_app_registra_venta_por_chatbot", alParameters, out mensajeDesdeSQLServer) ? 1 : 0;
                     paqueteDatos.mensajeData = mensajeDesdeSQLServer;
                 }
                 catch (Exception ex)

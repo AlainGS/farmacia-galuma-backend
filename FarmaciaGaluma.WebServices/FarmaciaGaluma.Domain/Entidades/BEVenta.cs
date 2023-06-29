@@ -2,7 +2,7 @@
 
 namespace FarmaciaGaluma.Dominio.Entidades
 {
-    public class BEVenta : BEMaster
+    public class BEVenta
     {
         public int VentaID { get; set; } = 0;
         public string NumeroBoleta { get; set; } = string.Empty;

@@ -25,5 +25,11 @@ namespace FarmaciaGaluma.Aplicacion.UseCases.Implementacion
         {
             return await _productoRepository.CreaEditaElimina(producto, accion);
         }
+
+
+        public async Task<RARdata<BEProductoBuscado>> EjecutarConsultarProductoXdescripcion(string descripcion)
+        {
+            return await _productoRepository.ConsultarProductoXdescripcion(descripcion);
+        }
     }
 }

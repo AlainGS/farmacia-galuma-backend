@@ -10,6 +10,7 @@ namespace FarmaciaGaluma.Infraestructura.Repositorios
         Task<RARdata<List<BEVenta>>> ObtenerTodo();
         Task<RARdata<List<BEVentaDetallado>>> ObtenerTodoDetallado();
         Task<RARdata<BEVenta>> Registrar(BEVenta venta, int accion);
+        Task<RARdata<BEVentaUnProducto>> VentaPorChatBot(BEVentaUnProducto ventaunproducto);
         Task<RARdata<List<BEVenta>>> Historial(string buscarPor, string numeroVenta, string fechaInicio, string fechaFin);
         Task<RARdata<BEReporte>> Reporte(string fechaInicio, string fechaFin);
     }

@@ -9,6 +9,7 @@ namespace FarmaciaGaluma.Aplicacion.UseCases
         Task<RARdata<List<BEVenta>>> EjecutarObtenerTodo();
         Task<RARdata<List<BEVentaDetallado>>> EjecutarObtenerTodoDetallado();
         Task<RARdata<BEVenta>> EjecutarRegistrar(BEVenta venta, int accion);
+        Task<RARdata<BEVentaUnProducto>> EjecutarVentaPorChatBot(BEVentaUnProducto ventaunproducto);
         Task<RARdata<List<BEVenta>>> EjecutarHistorial(string buscarPor, string numeroVenta, string fechaInicio, string fechaFin);
         Task<RARdata<BEReporte>> EjecutarReporte(string fechaInicio, string fechaFin);
 

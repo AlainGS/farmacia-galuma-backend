@@ -1,8 +1,10 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "FarmaciaGaluma.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
-    "version": "1.0"
+    "title": "Farmacia Galuma API",
+    "description": "API para consumir los metodos del sistema Farmacia Galuma",
+    "termsOfService": "https://www.cibertec.edu.pe",
+    "version": "v1"
   },
   "paths": {
     "/api/Boleta/UltimoNumero": {

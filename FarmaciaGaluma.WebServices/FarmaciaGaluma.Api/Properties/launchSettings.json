@@ -12,7 +12,7 @@
 
     "FarmaciaGaluma.Api": {
       "commandName": "Project",
-      //"dotnetRunMessages": true,
+      "dotnetRunMessages": true,
       "launchBrowser": true,
       "launchUrl": "swagger",
       "applicationUrl": "http://localhost:5000",

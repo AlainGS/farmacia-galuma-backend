@@ -9,5 +9,6 @@ namespace FarmaciaGaluma.Aplicacion.UseCases
     {
         Task<RARdata<List<BEProducto>>> EjecutarObtenerTodo();
         Task<RARdata<BEProducto>> EjecutarCreaEditaElimina(BEProducto producto, int accion);
+        Task<RARdata<BEProductoBuscado>> EjecutarConsultarProductoXdescripcion(string descripcion);
     }
 }

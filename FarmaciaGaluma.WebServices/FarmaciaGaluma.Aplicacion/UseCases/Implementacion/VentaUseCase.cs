@@ -38,5 +38,10 @@ namespace FarmaciaGaluma.Aplicacion.UseCases.Implementacion
         {
             return await _ventaRepository.Reporte(fechaInicio, fechaFin);
         }
+
+        public async Task<RARdata<BEVentaUnProducto>> EjecutarVentaPorChatBot(BEVentaUnProducto ventaunproducto)
+        {
+            return await _ventaRepository.VentaPorChatBot(ventaunproducto);
+        }
     }
 }

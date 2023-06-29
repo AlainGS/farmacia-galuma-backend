@@ -4,6 +4,7 @@ using System.Net;
 using FarmaciaGaluma.Dominio.Entidades;
 using FarmaciaGaluma.Aplicacion.UseCases;
 using FarmaciaGaluma.Aplicacion.UseCases.Implementacion;
+using System;
 
 namespace FarmaciaGaluma.API.Controllers
 {
@@ -20,7 +21,7 @@ namespace FarmaciaGaluma.API.Controllers
             
 
         #region LISTAR MUCHOS REGISTROS
-        [HttpPost]
+        [HttpGet]
         [Route("[action]")]
         public async Task<ActionResult> Listado()
         {
@@ -35,7 +36,7 @@ namespace FarmaciaGaluma.API.Controllers
                 return BadRequest(new WebApiError(500, HttpStatusCode.BadRequest.ToString(), paqueteDatos.mensajeData));
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("[action]")]
         public async Task<ActionResult> ListadoDetallado()
         {
@@ -57,6 +58,21 @@ namespace FarmaciaGaluma.API.Controllers
         public Task<ActionResult> Post(BEVenta entity)
         {
             return guardarCambios(1, entity); //accion 1 = insertar
+        }
+
+        [HttpPost]
+        [Route("[action]")]
+        public async Task<ActionResult> PostPorChatBot(BEVentaUnProducto entity)
+        {
+            var paqueteDatos = await _ventaUseCase.EjecutarVentaPorChatBot(entity);
+
+            if (paqueteDatos.estadoData != -1)
+            {
+                paqueteDatos.estadoData = paqueteDatos.estadoData == 1 ? 200 : 400;
+                return Ok(paqueteDatos);
+            }
+            else
+                return BadRequest(new WebApiError(500, HttpStatusCode.BadRequest.ToString(), paqueteDatos.mensajeData));
         }
 
         [HttpPut("{accion}")]

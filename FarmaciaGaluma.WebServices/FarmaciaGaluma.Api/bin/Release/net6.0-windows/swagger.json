@@ -1,0 +1,686 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Farmacia Galuma API",
+    "description": "API para consumir los metodos del sistema Farmacia Galuma",
+    "termsOfService": "https://www.cibertec.edu.pe",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Boleta/UltimoNumero": {
+      "get": {
+        "tags": [
+          "Boleta"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Categoria/Listado": {
+      "get": {
+        "tags": [
+          "Categoria"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Categoria": {
+      "post": {
+        "tags": [
+          "Categoria"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BECategoria"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Categoria/{accion}": {
+      "put": {
+        "tags": [
+          "Categoria"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "accion",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BECategoria"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Dashboard/Resumen": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Dashboard/GraficoBarras": {
+      "get": {
+        "tags": [
+          "Dashboard"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/DetalleVenta/BuscarDetalleVenta": {
+      "get": {
+        "tags": [
+          "DetalleVenta"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "id",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Menu/ListaMenu": {
+      "get": {
+        "tags": [
+          "Menu"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "idUsuario",
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Producto/Listado": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Producto": {
+      "post": {
+        "tags": [
+          "Producto"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEProducto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Producto/{accion}": {
+      "put": {
+        "tags": [
+          "Producto"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "accion",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEProducto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Producto/{descripcion}": {
+      "get": {
+        "tags": [
+          "Producto"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "descripcion",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Rol/Listado": {
+      "get": {
+        "tags": [
+          "Rol"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/IniciarSesion": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "correo",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "clave",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/Listado": {
+      "get": {
+        "tags": [
+          "Usuario"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario": {
+      "post": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEUsuario"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Usuario/{accion}": {
+      "put": {
+        "tags": [
+          "Usuario"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "accion",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEUsuario"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Venta/Listado": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Venta/ListadoDetallado": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Venta": {
+      "post": {
+        "tags": [
+          "Venta"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEVenta"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Venta/PostPorChatBot": {
+      "post": {
+        "tags": [
+          "Venta"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEVentaUnProducto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Venta/{accion}": {
+      "put": {
+        "tags": [
+          "Venta"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "accion",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/BEVenta"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/api/Venta/HistorialVentas": {
+      "get": {
+        "tags": [
+          "Venta"
+        ],
+        "parameters": [
+          {
+            "in": "query",
+            "name": "buscarPor",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "numeroVenta",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fechaInicio",
+            "type": "string"
+          },
+          {
+            "in": "query",
+            "name": "fechaFin",
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "BECategoria": {
+      "type": "object",
+      "properties": {
+        "nro": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pc": {
+          "type": "string"
+        },
+        "user": {
+          "type": "string"
+        },
+        "categoriaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "filtroID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoriaDescripcion": {
+          "type": "string"
+        },
+        "categoriaEstado": {
+          "type": "boolean"
+        }
+      }
+    },
+    "BEDetalleVenta": {
+      "type": "object",
+      "properties": {
+        "detalleVentaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "ventaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productoID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productoDescripcion": {
+          "type": "string"
+        },
+        "productoCantidad": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productoPrecio": {
+          "format": "double",
+          "type": "number"
+        },
+        "productoTotal": {
+          "format": "double",
+          "type": "number"
+        }
+      }
+    },
+    "BEProducto": {
+      "type": "object",
+      "properties": {
+        "nro": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pc": {
+          "type": "string"
+        },
+        "user": {
+          "type": "string"
+        },
+        "productoID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productoDescripcion": {
+          "type": "string"
+        },
+        "categoriaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "categoriaDescripcion": {
+          "type": "string"
+        },
+        "productoStock": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productoPrecio": {
+          "type": "string"
+        },
+        "fechaVencimiento": {
+          "type": "string"
+        },
+        "productoEstado": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "BEUsuario": {
+      "type": "object",
+      "properties": {
+        "nro": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "pc": {
+          "type": "string"
+        },
+        "user": {
+          "type": "string"
+        },
+        "usuarioID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "usuarioNombre": {
+          "type": "string"
+        },
+        "rolID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "rolNombre": {
+          "type": "string"
+        },
+        "usuarioCorreo": {
+          "type": "string"
+        },
+        "usuarioClave": {
+          "type": "string"
+        },
+        "usuarioEstado": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "BEVenta": {
+      "type": "object",
+      "properties": {
+        "ventaID": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "numeroBoleta": {
+          "type": "string"
+        },
+        "tipoPago": {
+          "type": "string"
+        },
+        "ventaTotal": {
+          "type": "string"
+        },
+        "fechaRegistro": {
+          "type": "string"
+        },
+        "detalleVenta": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/BEDetalleVenta"
+          }
+        }
+      }
+    },
+    "BEVentaUnProducto": {
+      "type": "object",
+      "properties": {
+        "tipoPago": {
+          "type": "string"
+        },
+        "productoDescripcion": {
+          "type": "string"
+        },
+        "productoCantidad": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    }
+  }
+}

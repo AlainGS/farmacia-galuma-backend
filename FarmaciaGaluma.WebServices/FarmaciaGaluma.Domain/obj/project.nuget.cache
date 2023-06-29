@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bsi+Pse/rw4s1Eh5iO271GoYxqknb2pAME3cOWvF3WpOuoynZrVGfZpS1BOnjNbPGZ7HvHNdL6ZXxXBcZpVTtQ==",
+  "dgSpecHash": "ZFNAQs+wPzqR2S66Re3w9+k7x6VsvhbB/TmYGfswfIXay0nkJaTzvwsAP86cHX2CLGiYdfsXtROl+Tt5Oo3ZUg==",
   "success": true,
-  "projectFilePath": "H:\\backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\FarmaciaGaluma.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\Alakings\\Desktop\\Farmacia Galuma Backend\\farmacia-galuma-backend\\FarmaciaGaluma.WebServices\\FarmaciaGaluma.Domain\\FarmaciaGaluma.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

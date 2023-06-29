@@ -7,5 +7,7 @@ namespace FarmaciaGaluma.Infraestructura.Repositorios
     {
         Task<RARdata<List<BEProducto>>> ObtenerTodo();
         Task<RARdata<BEProducto>> CreaEditaElimina(BEProducto producto, int accion);
+        Task<RARdata<BEProductoBuscado>> ConsultarProductoXdescripcion(string descripcion);
+
     }
 }
